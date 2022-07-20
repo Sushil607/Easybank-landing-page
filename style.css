@@ -97,6 +97,58 @@ p{
 }
 
 /**
+* ! Navbar Styles
+**/
+ul li{
+    padding: 0.5rem;
+    list-style: none;
+    /* border: 2px solid pink; */
+}
+
+ul li:hover{
+    border-bottom: 4px solid var(--primary-lime-green);
+}
+.navbar-links{
+    margin-top: 1rem;
+    border: 1px solid #333;
+    border-radius: 5px;
+    padding: 1rem 0;
+    display: none;
+    gap: 1rem;
+    flex-direction: column;
+    align-items: center;
+}
+
+ul li a{
+    color: var(--primary-dark-blue);
+}
+
+/* only display on larger screens */
+.navbar-links #request-btn{
+    display: none;
+}
+
+.hamburger-icon{
+    cursor: pointer;
+    position: absolute;
+    top: 2rem;
+    right: 2rem;
+}
+
+#close{
+    display: none;
+}
+
+
+
+
+
+
+
+
+
+
+/**
 * ! Showcase Styles
 **/
 
