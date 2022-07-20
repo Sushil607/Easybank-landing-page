@@ -14,30 +14,37 @@
 
     <title>Frontend Mentor | Easybank landing page</title>
     <link rel="stylesheet" type="text/css" href="style.css" />
+    <!-- Icon Scout -->
+    <link
+      rel="stylesheet"
+      href="https://unicons.iconscout.com/release/v4.0.0/css/line.css"
+    />
   </head>
   <body>
     <!-- Navbar -->
     <nav class="navbar">
-      <!-- Logo -->
-      <div class="brand-title">
-        <!-- Links -->
-        <img src="./images/logo.svg" alt="easybank logo" />
-        <ul class="navbar-links">
-          <li><a href="#">Home</a></li>
-          <li><a href="#">About</a></li>
-          <li><a href="#">Contact</a></li>
-          <li><a href="#">Blog</a></li>
-          <li><a href="#">Careers</a></li>
-          <li><button class="request-btn">Request Invite</button></li>
-        </ul>
-      </div>
-      <!-- Hamburger Menu Icon -->
-      <div class="hamburger-icon">
-        <div id="hamburger">
-          <img src="./images/icon-hamburger.svg" alt="hamburger icon" />
+      <div class="container">
+        <!-- Logo -->
+        <div class="brand-title">
+          <!-- Links -->
+          <img src="./images/logo.svg" alt="easybank logo" />
+          <ul class="navbar-links">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Careers</a></li>
+            <li><button class="request-btn">Request Invite</button></li>
+          </ul>
         </div>
-        <div id="close">
-          <img src="./images/icon-close.svg" alt="close icon" />
+        <!-- Hamburger Menu Icon -->
+        <div class="hamburger-icon">
+          <div id="hamburger">
+            <img src="./images/icon-hamburger.svg" alt="hamburger icon" />
+          </div>
+          <div id="close">
+            <img src="./images/icon-close.svg" alt="close icon" />
+          </div>
         </div>
       </div>
     </nav>
@@ -45,6 +52,7 @@
     <!-- Showcase Section -->
     <section id="showcase">
       <div class="container">
+        <div class="showcase-bg"></div>
         <div class="showcase-text">
           <h1>Next generation</h1>
           <h1>digital banking</h1>
@@ -55,7 +63,6 @@
           </p>
           <button class="request-btn">Request Invite</button>
         </div>
-        <div class="showcase-bg"></div>
       </div>
     </section>
 
@@ -66,9 +73,8 @@
           <h2>Why choose Easybank?</h2>
           <p>
             We leverage Open Banking to turn bank account into your financial
-            hub.
+            hub.Control your finances like never before.
           </p>
-          <p>Control your finances like never before.</p>
         </div>
         <div class="feature-list">
           <div class="feature">
@@ -110,7 +116,7 @@
     <!-- Articles Section -->
     <section id="articles">
       <div class="container">
-        <h3>Latest Articles</h3>
+        <h2>Latest Articles</h2>
         <div class="articles-list">
           <div class="article">
             <img
@@ -118,11 +124,13 @@
               src="./images/image-currency.jpg"
               alt="currency image"
             />
-            <div class="author">By Claire Robinson</div>
-            <h3>Receive money in any currency with no fees</h3>
-            <div class="content">
-              The world is getting smaller and we'are becoming more mobile. So
-              why should you be forced to only receive money in a single ...
+            <div class="article-info">
+              <div class="author">By Claire Robinson</div>
+              <h3>Receive money in any currency with no fees</h3>
+              <div class="content">
+                The world is getting smaller and we'are becoming more mobile. So
+                why should you be forced to only receive money in a single ...
+              </div>
             </div>
           </div>
           <div class="article">
@@ -131,11 +139,13 @@
               src="./images/image-restaurant.jpg"
               alt="restaurent food image"
             />
-            <div class="author">By Wilson Hutton</div>
-            <h3>Treat yourself without worrying about money</h3>
-            <div class="content">
-              Our simple budgeting feature allows you to separate out your
-              spending and set realistic limits each month.That means you ...
+            <div class="article-info">
+              <div class="author">By Wilson Hutton</div>
+              <h3>Treat yourself without worrying about money</h3>
+              <div class="content">
+                Our simple budgeting feature allows you to separate out your
+                spending and set realistic limits each month.That means you ...
+              </div>
             </div>
           </div>
           <div class="article">
@@ -144,11 +154,14 @@
               src="./images/image-plane.jpg"
               alt="aeroplane wing image"
             />
-            <div class="author">By Wilson Hutton</div>
-            <h3>Take your Easybank card wherever you go</h3>
-            <div class="content">
-              We want you to enjoy your travels. This is why we don't charge any
-              fees on purchases while you're abroad. We'll even show you ...
+            <div class="article-info">
+              <div class="author">By Wilson Hutton</div>
+              <h3>Take your Easybank card wherever you go</h3>
+              <div class="content">
+                We want you to enjoy your travels. This is why we don't charge
+                any fees on purchases while you're abroad. We'll even show you
+                ...
+              </div>
             </div>
           </div>
           <div class="article">
@@ -157,12 +170,14 @@
               src="./images/image-confetti.jpg"
               alt="confetti image"
             />
-            <div class="author">By Claire Robinson</div>
-            <h3>Our invite-only Beta accounts are now live!</h3>
-            <div class="content">
-              After a lot of hard work by the whole team, we're excited to
-              launch our closed beta. It's easy to request an invite through the
-              site ...
+            <div class="article-info">
+              <div class="author">By Claire Robinson</div>
+              <h3>Our invite-only Beta accounts are now live!</h3>
+              <div class="content">
+                After a lot of hard work by the whole team, we're excited to
+                launch our closed beta. It's easy to request an invite through
+                the site ...
+              </div>
             </div>
           </div>
         </div>
@@ -173,22 +188,19 @@
     <footer id="footer">
       <div class="container">
         <div class="social">
-          <img src="./images/logo.svg" alt="easybank logo" />
+          <div class="footer-logo">easybank</div>
           <div class="social-links">
-            <a href="#">
-              <img src="./images/icon-facebook.svg" alt="facebook icon" />
+            <a href="www.facebook.com">
+              <i class="uil uil-facebook"></i>
             </a>
-            <a href="#">
-              <img src="./images/icon-youtube.svg" alt="youtube icon" />
+            <a href="www.youtube.com">
+              <i class="uil uil-youtube"></i>
             </a>
-            <a href="#">
-              <img src="./images/icon-twitter.svg" alt="twitter icon" />
+            <a href="www.twitter.com">
+              <i class="uil uil-twitter"></i>
             </a>
-            <a href="#">
-              <img src="./images/icon-pinterest.svg" alt="pinterest icon" />
-            </a>
-            <a href="#">
-              <img src="./images/icon-instagram.svg" alt="instagram icon" />
+            <a href="www.instagram.com">
+              <i class="uil uil-instagram"></i>
             </a>
           </div>
         </div>
